@@ -1,0 +1,16 @@
+
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@47.100.45.101:1521/xe
+    password: zhifa123
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    username: zhifa
+server:
+  servlet:
+    context-path: /
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  typeAliasesPackage: com.zhifa.mybatisoracle.domain
+  configuration:
+    map-underscore-to-camel-case: true
