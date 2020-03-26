@@ -30,7 +30,7 @@ public class Lzf implements Serializable {
      * 生日
      */
     @TableField(value = "BIRTH_DAY")
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone="GMT+8")
     private Date birthDay;
 
     /**
