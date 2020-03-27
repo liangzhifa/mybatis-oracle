@@ -14,3 +14,15 @@ mybatis-plus:
   typeAliasesPackage: com.zhifa.mybatisoracle.domain
   configuration:
     map-underscore-to-camel-case: true
+pagehelper:
+  helperDialect: oracle
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+#mybatis的sql日志打印
+logging:
+  level:
+   com:
+    zhifa:
+     mybatisoracle:
+      mapper: debug
